@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
+    <ClInclude Include="CardBundle.h" />
     <ClInclude Include="CardDeck.h" />
     <ClInclude Include="CardHand.h" />
     <ClInclude Include="DataType.h" />

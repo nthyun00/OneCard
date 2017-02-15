@@ -27,9 +27,20 @@ namespace OneCard
 				deck.push_back(Card(CardType::Suit::Joker, CardType::jokerValue((CardType::Value)(i - 1))));
 		}
 
-		auto test()
+		auto& shuffle()
 		{
-			return deck.size();
+			std::random_shuffle(deck.begin(), deck.end());
+			return *this;
+		}
+		auto draw()
+		{
+			Card ret = deck.back();
+			deck.pop_back();
+			return ret;
+		}
+		auto& at(ScopingType < SizeType, 0, 53> index)	//T.T
+		{
+			return deck[index];
 		}
 	};
 	const std::vector<Card>&& CardDeck::defaulteDeck = returnDefaulteDeck();

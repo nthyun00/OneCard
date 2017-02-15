@@ -32,5 +32,11 @@ namespace OneCard
 		Card() = delete;
 		Card(CardType::Suit suit, CardType::Value value) : suit(suit), value(value) {}
 
+		void print()
+		{
+			using std::cout;
+			using std::endl;
+			cout << "(" << (Byte4)suit << "," << (Byte4)value << ")" << endl;
+		}
 	};
 }
