@@ -6,10 +6,11 @@
 #include <random>
 #include <chrono>
 
-namespace OneCard
+namespace Trump
 {
 	class CardDeck
 	{
+	private:
 		std::vector<Card> deck; 
 
 		static const std::vector<Card>&& defaulteDeck;
@@ -40,7 +41,8 @@ namespace OneCard
 			deck.pop_back();
 			return ret;
 		}
-		auto& at(ScopingType < SizeType, 0, 53> index)	//T.T
+
+		auto& at(ScopingType <SizeType, 0, 53> index)	//T.T
 		{
 			return deck[index];
 		}

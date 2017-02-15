@@ -2,7 +2,7 @@
 #include "DataType.h"
 #include <forward_list>
 
-namespace OneCard
+namespace Trump
 {
 	static class CardType
 	{
@@ -26,7 +26,7 @@ namespace OneCard
 	class Card 
 	{
 	public:
-		CardType::Suit suit;
+		typename CardType::Suit suit;
 		CardType::Value value;
 
 		Card() = delete;

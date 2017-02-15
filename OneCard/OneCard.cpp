@@ -8,13 +8,17 @@
 
 using namespace std;
 using namespace OneCard;
+using namespace Trump;
 
 int main()
 {
+	
 	CardDeck test(2);
-	test.shuffle();
+	cout << typeid(test).name() << endl;
+	/*test.shuffle();
 
 	for (SizeType i = 0; i < 60; i++)
-		test.at(i).print();
+		test.at(i).print();*/
+
 }
 
