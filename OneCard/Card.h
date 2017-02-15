@@ -30,7 +30,7 @@ namespace Trump
 		CardType::Value value;
 
 		Card() = delete;
-		Card(CardType::Suit suit, CardType::Value value) : suit(suit), value(value) {}
+		explicit Card(CardType::Suit suit, CardType::Value value) : suit(suit), value(value) {}
 
 		void print()
 		{

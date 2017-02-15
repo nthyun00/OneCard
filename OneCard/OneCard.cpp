@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Card.h"
 #include "CardDeck.h"
+#include "CardBundle.h"
 //#include "CardHand.h"
 
 using namespace std;

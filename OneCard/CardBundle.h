@@ -14,7 +14,7 @@ namespace OneCard
 		SizeType attackCount = 0;
 	public:
 		CardBundle() = delete;
-		CardBundle(Card& card)
+		explicit CardBundle(Card& card)
 		{
 			bundle.push_front(card);
 		}

@@ -23,8 +23,8 @@ namespace Trump
 			return ret;
 		}
 	public:
-		CardDeck() : deck(defaulteDeck) { };
-		CardDeck(ScopingType<SizeType, 1, 2> jokerNumber) :CardDeck()
+		explicit CardDeck() : deck(defaulteDeck) { };
+		explicit CardDeck(ScopingType<SizeType, 1, 2> jokerNumber) :CardDeck()
 		{
 			for (SizeType i = 0; i < jokerNumber; i++)
 				deck.push_back(Card(CardType::Suit::Joker, CardType::jokerValue((CardType::Value)(i - 1))));
