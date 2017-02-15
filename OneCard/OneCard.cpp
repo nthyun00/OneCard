@@ -11,11 +11,10 @@ using namespace OneCard;
 
 int main()
 {
-	CardDeck test0;
-	CardDeck test1(1);
-	CardDeck test2(2);
+	CardDeck test(2);
+	test.shuffle();
 
 	for (SizeType i = 0; i < 60; i++)
-		test2.at(i).print();
+		test.at(i).print();
 }
 

@@ -3,6 +3,8 @@
 #include "Card.h"
 #include <vector>
 #include <algorithm>
+#include <random>
+#include <chrono>
 
 namespace OneCard
 {
@@ -29,7 +31,7 @@ namespace OneCard
 
 		auto& shuffle()
 		{
-			std::random_shuffle(deck.begin(), deck.end());
+			std::shuffle(deck.begin(), deck.end(), std::default_random_engine(std::chrono::system_clock::now().time_since_epoch().count()) );
 			return *this;
 		}
 		auto draw()
