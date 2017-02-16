@@ -26,7 +26,7 @@ namespace Trump
 	class Card 
 	{
 	public:
-		typename CardType::Suit suit;
+		CardType::Suit suit;
 		CardType::Value value;
 
 		Card() = delete;
