@@ -13,13 +13,6 @@ using namespace Trump;
 
 int main()
 {
-	
-	CardDeck test(2);
-	cout << typeid(test).name() << endl;
-	/*test.shuffle();
-
-	for (SizeType i = 0; i < 60; i++)
-		test.at(i).print();*/
-
+	cout << sizeof(int*) << endl;
 }
 
